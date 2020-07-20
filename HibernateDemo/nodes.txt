@@ -1,0 +1,76 @@
+26-06-2020
+---------------
+We need to create module(methods) for all the Steps so that we can easily use them.
+
+class Calculator {
+
+public int add(int a, int b) {
+    return a+b;
+}
+}
+
+
+int sum = add(2,3); //5
+
+
+Here we will use DAO(Data Access Object) its a very good pattern to design database applications.
+
+Persistent Business Logic or it provides the abstract layer to the developer.
+
+Interface[all the methods are undefined]
+
+interface Hello{
+
+public void show();
+
+}
+
+Steps to use DAO Pattern
+
+1. create an interface and declair the methods inside this.
+
+    -- save
+    --update
+    --delete
+    --getStudentById
+    --findAll
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

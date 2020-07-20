@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+    <!-- Database Specific properties -->
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.password">pankaj</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/southex</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+        
+        <!-- Hibernate Specific Properties -->
+		<!-- This property is used to create a table/schema automatically(mandatory) -->
+		<property name="hibernate.hbm2ddl.auto">update</property>
+
+		<!-- Optional -->
+		<!-- The SQL created internally will be visibleon the console -->
+		<property name="hibernate.show_sql">true</property>
+		<property name="hibernate.format_sql">true</property>
+
+		<!-- Mapping the hbm.xml files -->
+		<mapping resource="Student.hbm.xml" />
+		<mapping resource="Course.hbm.xml" />
+
+		<mapping class="com.learning.hibernate.model.Passport" />
+	</session-factory>
+</hibernate-configuration>
