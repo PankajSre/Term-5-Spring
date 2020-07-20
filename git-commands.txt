@@ -1,0 +1,27 @@
+Github:
+
+Steps:
+1. Install github.Git CLI
+2. Create an account on Github.com
+3. Open github.com and create a Repository
+
+4. Open the Command Prompt and go to any folder where you want to keep Github Repository
+
+5. Clone the Repository from Github.com to the Local Machine
+    >>> git clone https://github.com/PankajSre/Term-5-Spring.git(Git URL)
+	
+6. Go to the Repository by using cd command. and then Put the files/Folders in the Repository to be uploaded on the github.com
+
+7. Check the files and folders which are updated/added
+
+    >>> git status
+8. Add the Untracked files/Folders to the Local Git
+   >>> git add file1 file 2....
+   >>> git add .
+   
+9. Commit the git in the local machine
+   >>> git commit -m "Java Files"
+   
+10. Finally push the repository form Local Machine to github.com
+    >>> git push -u origin master
+
